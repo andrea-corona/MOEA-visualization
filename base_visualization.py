@@ -7,6 +7,7 @@ import matplotlib.animation as animation
 import decimal
 import os
 from abc import ABC, abstractmethod
+
 class BaseVisualization(ABC):
 
     def __init__(self, output_file, input_file=None, data=None, title=None, dim=None, subtitle=None, min_values=None,

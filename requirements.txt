@@ -1,0 +1,7 @@
+animation
+numpy
+pandas
+matplotlib
+decimal
+os
+abc
