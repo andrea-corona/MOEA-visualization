@@ -125,7 +125,10 @@ class ParallelCoordinates(BaseVisualization):
         fig, axes = plt.subplots(1, self.dim - 1, sharey=False)
 
         #If the dimension is one, it turns the axes into a list of axes
-        if self.dim == 1:
+        if self.dim > 2:
+            fig, axes = plt.subplots(1, self.dim - 1, sharey=False)
+        else:
+            fig, axes = plt.subplots(1, 1, sharey=False)
             axes = [axes]
             
         # Sets the figure size
